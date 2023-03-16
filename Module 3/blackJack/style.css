@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://img.freepik.com/free-photo/whisky-glass-with-ice-cubes-gambling-table_23-2147881233.jpg?w=996&t=st=1678362076~exp=1678362676~hmac=ff40db6508f14fe6cf3d7ffe6991ddd15f7afe97589723d2c15c599d57f44882);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    color: gold;
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 900;
+}
+
+#message-el{
+    font-style: italic;
+}
+
+#start, #newCard {
+    display: block;
+    color: #016f32;
+    background-color: goldenrod;
+    width: 150px;
+    margin: 10px auto;
+    border: 0;
+    padding: 5px 0;
+    font-weight: 900;
+    border-radius: 3px;
+}
