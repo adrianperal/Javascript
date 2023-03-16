@@ -7,11 +7,16 @@ let cardsEl = document.getElementById("cards-el");
 //let play = document.getElementById("sum-el");
 let play = document.querySelector("#sum-el");
 
+function getRandomCard() {
+  let randCard = Math.floor(Math.random() * 11) + 1;
+  return randCard;
+}
+
 function startGame() {
   cards = [];
   cardsEl.textContent = "Cards: ";
-  cards.push(Math.floor(Math.random() * 11) + 1);
-  cards.push(Math.floor(Math.random() * 11) + 1);
+  cards.push(getRandomCard());
+  cards.push(getRandomCard());
   renderGame();
 }
 
@@ -34,7 +39,7 @@ function renderGame() {
 }
 
 function newCard() {
-  let newCard = Math.floor(Math.random() * 11) + 1;
+  let newCard = getRandomCard();
   cards.push(newCard);
   cardsEl.textContent = "Cards: ";
   renderGame();
