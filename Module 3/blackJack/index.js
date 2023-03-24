@@ -1,3 +1,7 @@
+let player = {
+  name: "Adri",
+  chips: 100,
+};
 let cards = [];
 let sum = 0;
 let won = false;
@@ -7,10 +11,6 @@ let cardsEl = document.getElementById("cards-el");
 //let play = document.getElementById("sum-el");
 let play = document.querySelector("#sum-el");
 //let userName = prompt("Welcome!\nWhat is your name?");
-let player = {
-  name: "Adri",
-  chips: 100,
-};
 let playerEl = document.querySelector("#player-el");
 
 function getRandomCard() {
@@ -32,13 +32,14 @@ function startGame() {
   cards.push(getRandomCard());
   if (player.chips > 0) {
     isAlive = true;
+    won = false;
     player.chips -= 10;
     renderGame();
   } else {
-    cardsEl.textContent = "";
-    player.textContent = "";
-    play.textContent = "";
-    playerEl.textContent = "";
+    // cardsEl.textContent = "";
+    // player.textContent = "";
+    // play.textContent = "";
+    // playerEl.textContent = "";
     message.textContent = "Out of chips ... :(";
   }
 }
