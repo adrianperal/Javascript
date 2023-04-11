@@ -1,7 +1,7 @@
 # Javascript
 
-* Excercises from freeCodeCamp website and from their youtube channel.
+* Exercises from freeCodeCamp website and from their youtube channel.
 
 - Blackjack Game (finished)
 
-* The Odin Project excercises from their online course.
+* The Odin Project exercises from their online course (Problem-solver skill: FizzBuzz).
