@@ -1,15 +1,21 @@
-function getComputerChoice() {
-  let x = Math.floor(Math.random() * 3);
-  if (x === 0) {
-    return "rock";
-  } else if (x === 1) {
-    return "paper";
-  } else return "scissors";
-}
+console.log("WELCOME TO RPS GAME!");
+
 let playerScore = 0;
 let computerScore = 0;
 
-console.log("WELCOME TO RPS GAME!");
+function getComputerChoice() {
+  let x = Math.floor(Math.random() * 3);
+  switch (x) {
+    case 0:
+        return 'rock'
+    case 1:
+        return 'paper'
+    case 3:
+        return 'scissors'
+    default:
+        break;
+  }
+}
 
 function startGame(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
