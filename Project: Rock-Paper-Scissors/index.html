@@ -5,12 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project: Rock Paper Scissors</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/index.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <h1>Project: Rock Paper Scissors</h1>
+      <div class="header">
+        <h1>Project: Rock Paper Scissors</h1>
+        <h2>Let's Play!</h2>
+        <h3></h3>
+        <h2>Choose Hand</h2>
+
+      </div>
+      <div class="hand">
+        <button id="rock">ROCK</button>
+        <button id="paper">PAPER</button>
+        <button id="scissors">SCISSORS</button>
+      </div>
+      <div class="grid-container">
+        <div class="full-width">SOCREBOARD</div>
+        <div class="column-1">PLAYER</div>
+        <div class="column-2">COMPUTER</div>
+        <div class="column-1"><span id="playerScore"></span></div>
+        <div class="column-2"><span id="computerScore"></span></div>
+      </div>
+      <button id="reset">RESET</button>
     </div>
-    <script src="assets/index.js"></script>
   </body>
 </html>
